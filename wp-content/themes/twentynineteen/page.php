@@ -1,38 +1,38 @@
 <?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since 1.0.0
- */
+/*
+Template Name: Empathy Homepage
+*/
+
+$portfolio_page_slug = get_option( 'portfolio_page_slug', "" );
+
+$page_all_info = get_post( get_the_ID() );
+$slug = $page_all_info->post_name;
+
+if ( $slug == $portfolio_page_slug )
+{
+  wp_redirect( home_url() . '/#/' . $slug );
+}
 
 get_header();
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div id="main" class="site-main">
+  <?php
+  dynamic_sidebar( 'sidebar-2' );
+  ?>
+</div>
+</div>
 
-			<?php
+<!-- PORTFOLIO SINGLE AJAX CONTENT CONTAINER -->
+<div class="p-overlay"></div>
+<div class="p-overlay"></div>
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				get_template_part( 'template-parts/content/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
+<!-- ALERT: used for contact form mail delivery alert -->
+<div class="site-alert animated"></div>
 
 <?php
-get_footer();
+wp_footer();
+?>
+
+</body>
+</html>
