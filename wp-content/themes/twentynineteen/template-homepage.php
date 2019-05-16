@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name: Portfolio Homepage
+*/
 
 $portfolio_page_slug = get_option( 'portfolio_page_slug', "" );
 
@@ -7,15 +10,16 @@ $slug = $page_all_info->post_name;
 
 if ( $slug == $portfolio_page_slug )
 {
-  wp_redirect( home_url() . '/#/' . $slug );
+	wp_redirect( home_url() . '/#/' . $slug );
 }
 
 get_header();
 ?>
 
 <div id="main" class="site-main">
-  <?php
-  ?>
+	<?php
+	dynamic_sidebar( 'sidebar-2' );
+	?>
 </div>
 </div>
 

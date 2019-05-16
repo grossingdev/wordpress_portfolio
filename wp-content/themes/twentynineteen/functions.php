@@ -208,7 +208,9 @@ function twentynineteen_widgets_init()
 add_action('widgets_init', 'twentynineteen_widgets_init');
 
 require get_template_directory() . '/custom/theme.php';
-require get_template_directory() . '/widgets/Home.php';
+require get_template_directory() . '/widgets/index.php';
+require get_template_directory() . '/custom/short_code.php';
+require get_template_directory() . '/custom/utils.php';
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

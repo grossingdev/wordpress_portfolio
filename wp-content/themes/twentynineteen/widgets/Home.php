@@ -5,7 +5,7 @@ class portfolio__Widget__Home extends WP_Widget
   public function __construct()
   {
     parent::__construct('portfolio__Widget__Home',
-      __('(Portfolio) [PAGE] Home', 'empathy'),
+      __('(Portfolio) [PAGE] Home', 'portfolio'),
       array('description' => __('Intro page.', 'portfolio')));
   }
 
@@ -31,7 +31,7 @@ class portfolio__Widget__Home extends WP_Widget
       <table style="width: 100%; margin-top: 5px;">
           <tr>
               <td>
-                  <label for="<?php echo $this->get_field_id('title'); ?>"><?php echo __('Title', 'empathy'); ?></label>
+                  <label for="<?php echo $this->get_field_id('title'); ?>"><?php echo __('Title', 'portfolio'); ?></label>
               </td>
               <td>
                   <input type="text" class="widefat" id="<?php echo $this->get_field_id('title'); ?>"
@@ -43,12 +43,12 @@ class portfolio__Widget__Home extends WP_Widget
 
               </td>
               <td>
-                  <span style="display: inline-block; margin-bottom: 5px; font-size: 11px; color: #999999;"><?php echo __('For menu item.', 'empathy'); ?></span>
+                  <span style="display: inline-block; margin-bottom: 5px; font-size: 11px; color: #999999;"><?php echo __('For menu item.', 'portfolio'); ?></span>
               </td>
           </tr>
           <tr>
               <td>
-                  <label for="<?php echo $this->get_field_id('icon'); ?>"><?php echo __('Icon', 'empathy'); ?></label>
+                  <label for="<?php echo $this->get_field_id('icon'); ?>"><?php echo __('Icon', 'portfolio'); ?></label>
               </td>
               <td>
                   <input type="text" class="widefat" id="<?php echo $this->get_field_id('icon'); ?>"
@@ -60,19 +60,19 @@ class portfolio__Widget__Home extends WP_Widget
 
               </td>
               <td>
-                  <span style="display: inline-block; margin-bottom: 5px; font-size: 11px; color: #999999;"><?php echo __('For page icon and menu icon.', 'empathy'); ?> <?php echo __('Use icon name.', 'empathy'); ?> <?php echo __('Available', 'empathy'); ?> <a
+                  <span style="display: inline-block; margin-bottom: 5px; font-size: 11px; color: #999999;"><?php echo __('For page icon and menu icon.', 'portfolio'); ?> <?php echo __('Use icon name.', 'portfolio'); ?> <?php echo __('Available', 'portfolio'); ?> <a
                               target="_blank"
-                              href="http://themes-pixeden.com/font-demos/7-stroke/"><?php echo __('icons', 'empathy'); ?></a>.</span>
+                              href="http://themes-pixeden.com/font-demos/7-stroke/"><?php echo __('icons', 'portfolio'); ?></a>.</span>
               </td>
           </tr>
           <tr>
               <td>
-                  <label for="<?php echo $this->get_field_id('custom_page_slug'); ?>"><?php echo __('Page', 'empathy'); ?></label>
+                  <label for="<?php echo $this->get_field_id('custom_page_slug'); ?>"><?php echo __('Page', 'portfolio'); ?></label>
               </td>
               <td>
                   <select class="widefat" id="<?php echo $this->get_field_id('custom_page_slug'); ?>"
                           name="<?php echo $this->get_field_name('custom_page_slug'); ?>">
-                      <option>&mdash; <?php echo __('Select', 'empathy'); ?> &mdash;</option>
+                      <option>&mdash; <?php echo __('Select', 'portfolio'); ?> &mdash;</option>
                     <?php
                     $pages = get_pages();
 
@@ -94,7 +94,7 @@ class portfolio__Widget__Home extends WP_Widget
 
               </td>
               <td>
-                  <span style="display: inline-block; font-size: 11px; color: #999999;"><?php echo __('Select a page for this widget. Set featured image to selected page for background image.', 'empathy'); ?></span>
+                  <span style="display: inline-block; font-size: 11px; color: #999999;"><?php echo __('Select a page for this widget. Set featured image to selected page for background image.', 'portfolio'); ?></span>
               </td>
           </tr>
       </table>
@@ -170,7 +170,7 @@ class portfolio__Widget__Home extends WP_Widget
         }
         ?>
           <section id="<?php echo esc_attr($custom_page_slug); ?>"
-                   class="pt-page page-layout home-section <?php echo esc_attr($background_media_class); ?>" <?php echo $background_media; ?>>
+                   class="pt-page page-layout home-section light-text <?php echo esc_attr($background_media_class); ?>" <?php echo $background_media; ?>>
               <div class="content">
                   <div class="layout-medium">
                       <h1 class="page-title" style="display: none;">
