@@ -303,7 +303,7 @@
     	}
     .service i,
 	.service img { 
-        float: none; width: auto; max-width: 84px; line-height: 1; font-size: 64px; margin-bottom: 18px;
+        float: none; width: auto; max-height: 85px; line-height: 1; font-size: 64px; margin-bottom: 18px;
     	}
     .service p {
         margin-left: 0;
