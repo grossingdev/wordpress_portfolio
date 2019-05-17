@@ -311,7 +311,21 @@
     .service h4 {
         margin-left: 0; margin-bottom: .8em;
     	}
-	
+
+    /* Skills */
+    .skill {
+        padding: 0.6em 0 0; text-align: center;
+    }
+    .skill i,
+    .skill img {
+        float: none; width: auto; max-height: 85px; line-height: 1; font-size: 64px; margin-bottom: 18px;
+    }
+    .skill p {
+        margin-left: 0;
+    }
+    .skill h4 {
+        margin-left: 0; margin-bottom: .8em;
+    }
 	/* BLOG */
 	.post .entry-content > p img:not(.alignleft):not(.alignright),
 	.post .entry-content .gallery {
@@ -393,7 +407,7 @@
 	
 	/* SECTION TITLE */
 	.section-title { 
-		margin: 4.4em 0 2.4em; 
+		margin: 3.4em 0 2.4em;
 		}
 	
 	/* HOME */
@@ -420,7 +434,7 @@
 	
 	/* SECTION TITLE */
 	.section-title { 
-		margin: 6em 0 3em; 
+		margin: 4em 0 3em;
 		}
     
     /* FILTERS */

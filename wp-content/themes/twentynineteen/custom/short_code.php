@@ -76,6 +76,35 @@
 	}
 	add_shortcode( 'icon', 'icon' );
 
+// client short code
+	function client( $atts, $content = "" ) {
+		$client = '<div class="client">' . do_shortcode( $content ) . '</div>';
+		return $client;
+	}
+	add_shortcode( 'client', 'client' );
+
+// skill short code
+function skill( $atts, $content = "" ) {
+	$skill = '<div class="skill">' . do_shortcode( $content ) . '</div>';
+	return $skill;
+}
+add_shortcode( 'skill', 'skill' );
+
+// card short code
+function card( $atts, $content = "" ) {
+	$card = '<div class="card">' . do_shortcode( $content ) . '</div>';
+	return $card;
+}
+add_shortcode( 'card', 'card' );
+
+// section_title short code
+function skill_content( $atts, $content = "" ) {
+	extract( shortcode_atts( array( 'title'  => "" ), $atts ) );
+	$skill_section = '<h2>' . $title . '</h2>';
+	return $skill_section;
+}
+add_shortcode( 'skill_content', 'skill_content' );
+
 // Actual processing of the shortcode happens here
 function portfolio__run_shortcode($content) {
   global $shortcode_tags;
@@ -90,6 +119,10 @@ function portfolio__run_shortcode($content) {
 	add_shortcode( 'service', 'service' );
 	add_shortcode( 'process', 'process' );
 	add_shortcode( 'icon', 'icon' );
+	add_shortcode( 'client', 'client' );
+	add_shortcode( 'skill', 'skill' );
+	add_shortcode( 'card', 'card' );
+	add_shortcode( 'skill_content', 'skill_content' );
   // Do the shortcode ( only the one above is registered )
   $content = do_shortcode( $content );
   // Put the original shortcodes back
