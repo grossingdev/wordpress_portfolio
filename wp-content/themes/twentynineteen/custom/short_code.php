@@ -84,26 +84,58 @@
 	add_shortcode( 'client', 'client' );
 
 // skill short code
-function skill( $atts, $content = "" ) {
-	$skill = '<div class="skill">' . do_shortcode( $content ) . '</div>';
-	return $skill;
-}
-add_shortcode( 'skill', 'skill' );
+	function skill( $atts, $content = "" ) {
+		$skill = '<div class="skill">' . do_shortcode( $content ) . '</div>';
+		return $skill;
+	}
+	add_shortcode( 'skill', 'skill' );
 
 // card short code
-function card( $atts, $content = "" ) {
-	$card = '<div class="card">' . do_shortcode( $content ) . '</div>';
-	return $card;
-}
-add_shortcode( 'card', 'card' );
+	function card( $atts, $content = "" ) {
+		$card = '<div class="card">' . do_shortcode( $content ) . '</div>';
+		return $card;
+	}
+	add_shortcode( 'card', 'card' );
 
 // section_title short code
-function skill_content( $atts, $content = "" ) {
-	extract( shortcode_atts( array( 'title'  => "" ), $atts ) );
-	$skill_section = '<h2>' . $title . '</h2>';
-	return $skill_section;
-}
-add_shortcode( 'skill_content', 'skill_content' );
+	function skill_content( $atts, $content = "" ) {
+		extract( shortcode_atts( array( 'title'  => "" ), $atts ) );
+		$skill_section = '<h2>' . $title . '</h2>';
+		return $skill_section;
+	}
+	add_shortcode( 'skill_content', 'skill_content' );
+
+// event short code
+	function event( $atts, $content = "" ) {
+		$event = '<div class="event">' . do_shortcode( $content ) . '</div>';
+		return $event;
+	}
+	add_shortcode( 'event', 'event' );
+
+// testimonial code
+	function testimonial( $atts, $content = "" ) {
+		$testimonial = '<div class="testo">' . do_shortcode( $content ) . '</div>';
+		return $testimonial;
+	}
+	add_shortcode( 'testimonial', 'testimonial' );
+
+// button code
+	function button( $atts, $content = "" ) {
+		extract( shortcode_atts( array( 'text' => "",
+			'new_tab' => "",
+			'size'    => "",
+			'icon'    => "",
+			'url'     => "" ), $atts ) );
+		if ( $new_tab == 'yes' ) {
+			$new_tab = ' target="_blank"';
+		}
+		if ( $icon != "" ) {
+			$icon = '<i class="' . $icon . '"></i>';
+		}
+		$button = '<a' . $new_tab . ' class="button ' . $size . '" href="' . $url . '">' . $icon . $text . '</a>';
+		return $button;
+	}
+	add_shortcode( 'button', 'button' );
 
 // Actual processing of the shortcode happens here
 function portfolio__run_shortcode($content) {
@@ -123,7 +155,11 @@ function portfolio__run_shortcode($content) {
 	add_shortcode( 'skill', 'skill' );
 	add_shortcode( 'card', 'card' );
 	add_shortcode( 'skill_content', 'skill_content' );
-  // Do the shortcode ( only the one above is registered )
+	add_shortcode( 'event', 'event' );
+	add_shortcode( 'testimonial', 'testimonial' );
+	add_shortcode( 'button', 'button' );
+
+	// Do the shortcode ( only the one above is registered )
   $content = do_shortcode( $content );
   // Put the original shortcodes back
   $shortcode_tags = $orig_shortcode_tags;
