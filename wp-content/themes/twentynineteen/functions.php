@@ -206,7 +206,7 @@ function twentynineteen_widgets_init()
 }
 
 add_action('widgets_init', 'twentynineteen_widgets_init');
-
+require get_template_directory() . '/custom/post.php';
 require get_template_directory() . '/custom/theme.php';
 require get_template_directory() . '/widgets/index.php';
 require get_template_directory() . '/custom/short_code.php';

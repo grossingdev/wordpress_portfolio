@@ -456,7 +456,6 @@ var mapCanvas;
 					// set columns
 					refreshMasonry();
 				});
-				
 				if (!$(el).data('isotope')) {
 					// filters
 					var filters = $(el).siblings('.filters');
@@ -619,38 +618,39 @@ var mapCanvas;
 		
 		var p = $('.p-overlay:not(.active)').first();
 		pActive = $('.p-overlay.active');
-		
 		// ajax : fill data
-		p.empty().load(url + ' .portfolio-single', function() {	
+
+		p.empty().load(url + ' .portfolio-single', function(responseText, textStatus, xhr) {
+		    debugger;
 			NProgress.set(0.5);
-			
+
 			// wait for images to be loaded
 			p.imagesLoaded(function() {
-				
+
 				// for galleries in ajax pulled content
 				setupMasonry();
-				
+
 				if(pActive.length) {
-					hideProjectDetails();	  
+					hideProjectDetails();
 				}
-				
+
 				hideLoader();
-				
+
 				$('html').addClass('p-overlay-on');
-				
+
 				$("body").scrollTop(0);
-								
+
 				// setup plugins
 				setup();
 
 				if(classicLayout) {
-					p.show();	
+					p.show();
 				} else {
-					p.removeClass('animate-in animate-out').addClass('animate-in').show();		
+					p.removeClass('animate-in animate-out').addClass('animate-in').show();
 				}
-				
+
 				p.addClass('active');
-				
+
 			});
 		});
 	}

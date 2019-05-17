@@ -29,7 +29,7 @@ $portfolio__setting_animation_3 = get_theme_mod('portfolio__setting_animation_3'
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>
+<body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="hfeed sit">
     <header id="masthead" class="header" role="banner">
