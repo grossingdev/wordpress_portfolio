@@ -621,7 +621,6 @@ var mapCanvas;
 		// ajax : fill data
 
 		p.empty().load(url + ' .portfolio-single', function(responseText, textStatus, xhr) {
-		    debugger;
 			NProgress.set(0.5);
 
 			// wait for images to be loaded
