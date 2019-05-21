@@ -26,6 +26,7 @@ function portfolio__enqueue()
   wp_enqueue_style( 'uniform', $theme_directory . '/js/jquery.uniform/uniform.default.css', null, null );
   wp_enqueue_style( 'animations', $theme_directory . '/css/animations.css', null, null );
   wp_enqueue_style( 'portfolio-main', $theme_directory . '/css/main.css', null, null );
+  wp_enqueue_style( 'portfolio-768', $theme_directory . '/css/768.css', null, null );
   wp_enqueue_style( 'portfolio-wp-fix', $theme_directory . '/css/wp-fix.css', null, null );
   wp_enqueue_style( 'portfolio-style', get_stylesheet_uri(), null, null );
 
