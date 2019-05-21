@@ -709,80 +709,90 @@ var mapCanvas;
 	
 	
 	
-	
+	function setActivePageAfterJquery() {
+        var path = $.address.path();
+        path = path.slice(1, path.length);
+        path = giveDetailUrl() != -1 ? portfolioKeyword : path;
+
+
+        if(path == "") {  // if hash tag doesnt exists - go to first page
+            //alert("path is empty");
+            var firstPage = $('.nav-menu li').first().find('a').attr('href');
+            path = firstPage.slice(2,firstPage.length);
+
+
+            if(classicLayout) {
+                $('#'+ path).addClass( 'page-current' ).siblings().removeClass( 'page-current' );
+            } else {
+                if(!($('.page-current').length)) { // first load - don't animate page change
+                    $('#'+ path).addClass( 'page-current' );
+                    current = $('#'+ path).index();
+                    setCurrentMenuItem();
+                } else { // animate page change
+
+                    //console.log(giveDetailUrl());
+                    PageTransitions.nextPage( $('#'+ path).index() );
+
+                }
+            }
+
+
+
+
+            setCurrentMenuItem();
+
+            //$.address.path(path);
+            return false;
+        }
+        else { // show page change animation
+
+            // change page only if url doesn't target portfolio single page
+            if(giveDetailUrl() == -1){
+
+                if(classicLayout) {
+                    $('#'+ path).addClass( 'page-current' ).siblings().removeClass( 'page-current' );
+                    setCurrentMenuItem();
+                } else {
+                    if(!($('.page-current').length)) { // first load - don't animate page change
+                        $('#'+ path).addClass( 'page-current' );
+                        current = $('#'+ path).index();
+                        setCurrentMenuItem();
+                    } else { // animate page change
+
+                        //console.log(giveDetailUrl());
+                        PageTransitions.nextPage( $('#'+ path).index() );
+
+                    }
+                }
+
+            }
+
+
+        }
+
+        /*if(path.indexOf(portfolioKeyword) != -1) {
+        } */
+
+        // refresh masonry layouts
+        refreshMasonry();
+        setTimeout(function() { refreshMasonry(); }, 100);
+    }
 	
 	// ------------------------------
 	// CHANGE PAGE
 	function setActivePage() {
-		
-		var path = $.address.path();
-		path = path.slice(1, path.length);
-		path = giveDetailUrl() != -1 ? portfolioKeyword : path;
-		
-		
-		if(path == "") {  // if hash tag doesnt exists - go to first page
-			//alert("path is empty");
-			var firstPage = $('.nav-menu li').first().find('a').attr('href');
-			path = firstPage.slice(2,firstPage.length);
-			
-			
-			if(classicLayout) {
-				$('#'+ path).addClass( 'page-current' ).siblings().removeClass( 'page-current' );	
-			} else {
-				if(!($('.page-current').length)) { // first load - don't animate page change
-					$('#'+ path).addClass( 'page-current' );
-					current = $('#'+ path).index();
-					setCurrentMenuItem();
-				} else { // animate page change
-
-						//console.log(giveDetailUrl());
-						PageTransitions.nextPage( $('#'+ path).index() );
-
-				}	
-			}
-	
-			
-			
-			
-			setCurrentMenuItem();
-
-			//$.address.path(path);
-			return false;
-			}
-		else { // show page change animation
-				
-				// change page only if url doesn't target portfolio single page
-				if(giveDetailUrl() == -1){
-					
-					if(classicLayout) {
-						$('#'+ path).addClass( 'page-current' ).siblings().removeClass( 'page-current' );	
-						setCurrentMenuItem();
-					} else {
-						if(!($('.page-current').length)) { // first load - don't animate page change
-							$('#'+ path).addClass( 'page-current' );
-							current = $('#'+ path).index();
-							setCurrentMenuItem();
-						} else { // animate page change
-							
-								//console.log(giveDetailUrl());
-								PageTransitions.nextPage( $('#'+ path).index() );
-							
-						}	
-					}
-						
-				}
-				
-				
-		}
-
-		/*if(path.indexOf(portfolioKeyword) != -1) {
-		} */
-		
-		// refresh masonry layouts
-		refreshMasonry();
-		setTimeout(function() { refreshMasonry(); }, 100);
-		
-	}	
+        var firstPage = $('.nav-menu li').first().find('a').attr('href');
+	    if (typeof firstPage === "undefined") {
+            var handleInterval = setInterval(function() {
+                if (typeof jQuery !== "undefined") {
+                    clearInterval(handleInterval);
+                    setActivePageAfterJquery();
+                }
+            }, 1000);
+        } else {
+	        setActivePageAfterJquery();
+        }
+	}
 	// ------------------------------
 	
 	

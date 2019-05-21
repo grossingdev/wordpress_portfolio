@@ -18,7 +18,7 @@
 
                   <script>
                   var handleInterval = setInterval(function() {
-                      if (jQuery) {
+                      if (typeof jQuery !== "undefined") {
                           clearInterval(handleInterval);
                           jQuery(document).ready(function ($) {
                               var menu_html = "";
