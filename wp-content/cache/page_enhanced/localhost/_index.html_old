@@ -5,7 +5,8 @@
                                       data-prev-animation="61"
                                       data-next-animation="60"
                                       data-random-animation="false">
-<head>
+<head><script defer src="http://localhost/wp-content/cache/minify/c3544.default.include.0ea0cd.js"></script>
+
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="profile" href="https://gmpg.org/xfn/11"/>
@@ -32,26 +33,23 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-	<link rel="stylesheet" href="http://localhost/wp-content/cache/minify/108dd.css" media="all" />
-
-
-
+	<link rel='stylesheet' id='wp-block-library-css'  href='http://localhost/wp-includes/css/dist/block-library/style.min.css?ver=5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='http://localhost/wp-includes/css/dist/block-library/theme.min.css?ver=5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='twentynineteen-style-css'  href='http://localhost/wp-content/themes/twentynineteen/style.css?ver=1.0' type='text/css' media='all' />
 <link rel='stylesheet' id='twentynineteen-print-style-css'  href='http://localhost/wp-content/themes/twentynineteen/print.css?ver=1.0' type='text/css' media='print' />
 <link rel='stylesheet' id='montserrat-css'  href='//fonts.googleapis.com/css?family=Montserrat:400,700' type='text/css' media='all' />
 <link rel='stylesheet' id='roboto-css'  href='//fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' type='text/css' media='all' />
-<link rel="stylesheet" href="http://localhost/wp-content/cache/minify/b5e53.css" media="all" />
-
-
-
-
-
-
-
-
-
-
-
-<script defer src="http://localhost/wp-content/cache/minify/ff75d.js"></script>
+<link rel='stylesheet' id='bootstrap-css'  href='http://localhost/wp-content/themes/twentynineteen/css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pe-icon-7-stroke-css'  href='http://localhost/wp-content/themes/twentynineteen/css/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fontello-css'  href='http://localhost/wp-content/themes/twentynineteen/css/fonts/fontello/css/fontello.css' type='text/css' media='all' />
+<link rel='stylesheet' id='nprogress-css'  href='http://localhost/wp-content/themes/twentynineteen/js/nprogress/nprogress.css' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='http://localhost/wp-content/themes/twentynineteen/js/jquery.magnific-popup/magnific-popup.css' type='text/css' media='all' />
+<link rel='stylesheet' id='uniform-css'  href='http://localhost/wp-content/themes/twentynineteen/js/jquery.uniform/uniform.default.css' type='text/css' media='all' />
+<link rel='stylesheet' id='animations-css'  href='http://localhost/wp-content/themes/twentynineteen/css/animations.css' type='text/css' media='all' />
+<link rel='stylesheet' id='portfolio-main-css'  href='http://localhost/wp-content/themes/twentynineteen/css/main.css' type='text/css' media='all' />
+<link rel='stylesheet' id='portfolio-768-css'  href='http://localhost/wp-content/themes/twentynineteen/css/768.css' type='text/css' media='all' />
+<link rel='stylesheet' id='portfolio-wp-fix-css'  href='http://localhost/wp-content/themes/twentynineteen/css/wp-fix.css' type='text/css' media='all' />
+<link rel='stylesheet' id='portfolio-style-css'  href='http://localhost/wp-content/themes/twentynineteen/style.css' type='text/css' media='all' />
 
 
 
@@ -73,8 +71,8 @@ img.emoji {
         Janusz Sikora      </h1>
       
       <div class="header-wrap">
-                <img alt="Janusz Sikora" src="http://localhost/wp-content/uploads/2019/05/me.jpg">
-                  <h1 class="site-title ">
+      <img alt="Janusz Sikora" src="./wp-content/uploads/2019/05/me.jpg">
+            <h1 class="site-title ">
         Janusz Sikora      </h1>
                 <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
               <div class="nav-menu">
@@ -132,28 +130,28 @@ img.emoji {
 <div class="row">
 <div class="col-sm-6 col-md-3">
 <div class="service">
-<h4><img class="alignnone size-medium wp-image-31" src="http://localhost/wp-content/uploads/2019/05/front-end-dev.jpg" alt="" width="300" height="288"></h4>
+<h4><img class="alignnone size-medium wp-image-31" src="./wp-content/uploads/2019/05/front-end-dev.jpg" alt="" width="300" height="288" /></h4>
 <h4>FRONT-END DEVELOPER</h4>
 <p>I like to code things from scratch, and enjoy bringing ideas to life in browser.
 </p></div>
 </div>
 <div class="col-sm-6 col-md-3">
 <div class="service">
-<h4><img class="alignnone size-medium wp-image-33" src="http://localhost/wp-content/uploads/2019/05/back-end-dev.jpg" alt="" width="296" height="300"></h4>
+<h4><img class="alignnone size-medium wp-image-33" src="./wp-content/uploads/2019/05/back-end-dev.jpg" alt="" width="296" height="300" /></h4>
 <h4>BACKEND DEVELOPER</h4>
 <p>I am capable of developing backend projects as well as server/database management with Cloud Services.
 </p></div>
 </div>
 <div class="col-sm-6 col-md-3">
 <div class="service">
-<h4><img class="alignnone size-medium wp-image-34" src="http://localhost/wp-content/uploads/2019/05/mobile-dev.jpg" alt="" width="300" height="288"></h4>
+<h4><img class="alignnone size-medium wp-image-34" src="./wp-content/uploads/2019/05/mobile-dev.jpg" alt="" width="300" height="288" /></h4>
 <h4>MOBILE APP DEVELOPER</h4>
 <p>I can develop scalable and flexible mobile apps for your services or product marketplace together with management, analysis and maintenance.
 </p></div>
 </div>
 <div class="col-sm-6 col-md-3">
 <div class="service">
-<h4><img class="alignnone size-medium wp-image-37" src="http://localhost/wp-content/uploads/2019/05/problem-solver.jpg" alt="" width="300" height="288"></h4>
+<h4><img class="alignnone size-medium wp-image-37" src="./wp-content/uploads/2019/05/problem-solver.jpg" alt="" width="300" height="288" /></h4>
 <h4>PROBLEM SOLVER</h4>
 <p>I have strong project management skills and I&#8217;m can take vague problems and requirements and break them down into steps and solutions.
 </p></div>
@@ -200,22 +198,22 @@ img.emoji {
 <div class="row">
 <div class=" col-xs-4 col-md-3">
 <div class="client">
-<img class="alignnone size-medium wp-image-85" src="http://localhost/wp-content/uploads/2019/05/tred-logo.jpg" alt="" width="300" height="77">
+<img class="alignnone size-medium wp-image-85" src="./wp-content/uploads/2019/05/tred-logo.jpg" alt="" width="300" height="77" />
 </div>
 </div>
 <div class=" col-xs-4 col-md-3">
 <div class="client">
-<img class="alignnone size-medium wp-image-98" src="http://localhost/wp-content/uploads/2019/05/sv-logo.jpg" alt="" width="300" height="161">
+<img class="alignnone size-medium wp-image-98" src="./wp-content/uploads/2019/05/sv-logo.jpg" alt="" width="300" height="161" />
 </div>
 </div>
 <div class=" col-xs-4 col-md-3">
 <div class="client">
-<img class="alignnone size-medium wp-image-83" src="http://localhost/wp-content/uploads/2019/05/gcm-logo.jpg" alt="" width="300" height="146">
+<img class="alignnone size-medium wp-image-83" src="./wp-content/uploads/2019/05/gcm-logo.jpg" alt="" width="300" height="146" />
 </div>
 </div>
 <div class=" col-xs-4 col-md-3">
 <div class="client">
-<p><img class="alignnone size-medium wp-image-86" src="http://localhost/wp-content/uploads/2019/05/zillow-logo.jpg" alt="" width="300" height="67">
+<p><img class="alignnone size-medium wp-image-86" src="./wp-content/uploads/2019/05/zillow-logo.jpg" alt="" width="300" height="67" />
 </div>
 </div>
 </div>
@@ -234,37 +232,37 @@ img.emoji {
 <div class="row">
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-200" src="http://localhost/wp-content/uploads/2019/05/react-native.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-200" src="./wp-content/uploads/2019/05/react-native.jpg" alt="" width="250" height="250" /><br />
 React-Native</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-198" src="http://localhost/wp-content/uploads/2019/05/graphql.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-198" src="./wp-content/uploads/2019/05/graphql.jpg" alt="" width="250" height="250" /><br />
 GraphQL</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-201" src="http://localhost/wp-content/uploads/2019/05/tensor.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-201" src="./wp-content/uploads/2019/05/tensor.jpg" alt="" width="250" height="250" /><br />
 Tensorflow</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-197" src="http://localhost/wp-content/uploads/2019/05/flutter.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-197" src="./wp-content/uploads/2019/05/flutter.jpg" alt="" width="250" height="250" /><br />
 Flutter</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-196" src="http://localhost/wp-content/uploads/2019/05/blockchain.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-196" src="./wp-content/uploads/2019/05/blockchain.jpg" alt="" width="250" height="250" /><br />
 Blockchain</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-199" src="http://localhost/wp-content/uploads/2019/05/neo4j.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-199" src="./wp-content/uploads/2019/05/neo4j.jpg" alt="" width="250" height="250" /><br />
 Neo4J</h4>
 </div>
 </div>
@@ -275,37 +273,37 @@ Neo4J</h4>
 <div class="row">
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-116" src="http://localhost/wp-content/uploads/2019/05/html5.jpg" alt="" width="180" height="180" /><br />
+<h4><img class="alignnone size-full wp-image-116" src="./wp-content/uploads/2019/05/html5.jpg" alt="" width="180" height="180" /><br />
 HTML5</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-117" src="http://localhost/wp-content/uploads/2019/05/js.jpg" alt="" width="180" height="180" /><br />
+<h4><img class="alignnone size-full wp-image-117" src="./wp-content/uploads/2019/05/js.jpg" alt="" width="180" height="180" /><br />
 Javascript</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-115" src="http://localhost/wp-content/uploads/2019/05/css3.jpg" alt="" width="180" height="180" /><br />
+<h4><img class="alignnone size-full wp-image-115" src="./wp-content/uploads/2019/05/css3.jpg" alt="" width="180" height="180" /><br />
 CSS3</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-118" src="http://localhost/wp-content/uploads/2019/05/react.jpg" alt="" width="180" height="180" /><br />
+<h4><img class="alignnone size-full wp-image-118" src="./wp-content/uploads/2019/05/react.jpg" alt="" width="180" height="180" /><br />
 React</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-114" src="http://localhost/wp-content/uploads/2019/05/angular.jpg" alt="" width="180" height="180" /><br />
+<h4><img class="alignnone size-full wp-image-114" src="./wp-content/uploads/2019/05/angular.jpg" alt="" width="180" height="180" /><br />
 Angular</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-119" src="http://localhost/wp-content/uploads/2019/05/ts.jpg" alt="" width="180" height="180" /><br />
+<h4><img class="alignnone size-full wp-image-119" src="./wp-content/uploads/2019/05/ts.jpg" alt="" width="180" height="180" /><br />
 TypeScript</h4>
 </div>
 </div>
@@ -316,13 +314,13 @@ TypeScript</h4>
 <div class="row">
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-143" src="http://localhost/wp-content/uploads/2019/05/nodejs.jpg" alt="" width="180" height="180" /><br />
+<h4><img class="alignnone size-full wp-image-143" src="./wp-content/uploads/2019/05/nodejs.jpg" alt="" width="180" height="180" /><br />
 NodeJS</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-144" src="http://localhost/wp-content/uploads/2019/05/python.jpg" alt="" width="180" height="180" /><br />
+<h4><img class="alignnone size-full wp-image-144" src="./wp-content/uploads/2019/05/python.jpg" alt="" width="180" height="180" /><br />
 Django</h4>
 </div>
 </div>
@@ -334,19 +332,19 @@ Ruby on Rails</h4>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-149" src="http://localhost/wp-content/uploads/2019/05/LaravelLogo-1.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-149" src="./wp-content/uploads/2019/05/LaravelLogo-1.jpg" alt="" width="250" height="250" /><br />
 PHP Laravel</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-140" src="http://localhost/wp-content/uploads/2019/05/elixir.jpg" alt="" width="180" height="180" /><br />
+<h4><img class="alignnone size-full wp-image-140" src="./wp-content/uploads/2019/05/elixir.jpg" alt="" width="180" height="180" /><br />
 Elixir Phoneix</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-148" src="http://localhost/wp-content/uploads/2019/05/go.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-148" src="./wp-content/uploads/2019/05/go.jpg" alt="" width="250" height="250" /><br />
 GO</h4>
 </div>
 </div>
@@ -357,25 +355,25 @@ GO</h4>
 <div class="row">
 <div class=" col-xs-4 col-md-3">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-204" src="http://localhost/wp-content/uploads/2019/05/java.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-204" src="./wp-content/uploads/2019/05/java.jpg" alt="" width="250" height="250" /><br />
 Java</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-3">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-205" src="http://localhost/wp-content/uploads/2019/05/kotlin.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-205" src="./wp-content/uploads/2019/05/kotlin.jpg" alt="" width="250" height="250" /><br />
 Kotlin</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-3">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-206" src="http://localhost/wp-content/uploads/2019/05/objective-c.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-206" src="./wp-content/uploads/2019/05/objective-c.jpg" alt="" width="250" height="250" /><br />
 Objective-C</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-3">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-207" src="http://localhost/wp-content/uploads/2019/05/swift.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-207" src="./wp-content/uploads/2019/05/swift.jpg" alt="" width="250" height="250" /><br />
 Swift 3/4/5</h4>
 </div>
 </div>
@@ -386,37 +384,37 @@ Swift 3/4/5</h4>
 <div class="row">
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-153" src="http://localhost/wp-content/uploads/2019/05/aws-logo.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-153" src="./wp-content/uploads/2019/05/aws-logo.jpg" alt="" width="250" height="250" /><br />
 AWS</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-158" src="http://localhost/wp-content/uploads/2019/05/super_cloud.jpg" alt="" width="192" height="192" /><br />
+<h4><img class="alignnone size-full wp-image-158" src="./wp-content/uploads/2019/05/super_cloud.jpg" alt="" width="192" height="192" /><br />
 Google Cloud</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-154" src="http://localhost/wp-content/uploads/2019/05/azure.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-154" src="./wp-content/uploads/2019/05/azure.jpg" alt="" width="250" height="250" /><br />
 MS Azure</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-155" src="http://localhost/wp-content/uploads/2019/05/firebase.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-155" src="./wp-content/uploads/2019/05/firebase.jpg" alt="" width="250" height="250" /><br />
 Firebase</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-157" src="http://localhost/wp-content/uploads/2019/05/nginx.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-157" src="./wp-content/uploads/2019/05/nginx.jpg" alt="" width="250" height="250" /><br />
 Nginx</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-2">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-156" src="http://localhost/wp-content/uploads/2019/05/git.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-156" src="./wp-content/uploads/2019/05/git.jpg" alt="" width="250" height="250" /><br />
 Git</h4>
 </div>
 </div>
@@ -427,19 +425,19 @@ Git</h4>
 <div class="row">
 <div class=" col-xs-4 col-md-4">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-164" src="http://localhost/wp-content/uploads/2019/05/wordpress.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-164" src="./wp-content/uploads/2019/05/wordpress.jpg" alt="" width="250" height="250" /><br />
 WordPress</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-4">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-163" src="http://localhost/wp-content/uploads/2019/05/magento.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-163" src="./wp-content/uploads/2019/05/magento.jpg" alt="" width="250" height="250" /><br />
 Magento</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-4">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-162" src="http://localhost/wp-content/uploads/2019/05/drupal.jpg" alt="" width="240" height="240" /><br />
+<h4><img class="alignnone size-full wp-image-162" src="./wp-content/uploads/2019/05/drupal.jpg" alt="" width="240" height="240" /><br />
 Drupal</h4>
 </div>
 </div>
@@ -450,25 +448,25 @@ Drupal</h4>
 <div class="row">
 <div class=" col-xs-4 col-md-3">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-168" src="http://localhost/wp-content/uploads/2019/05/mysql.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-168" src="./wp-content/uploads/2019/05/mysql.jpg" alt="" width="250" height="250" /><br />
 MySQL</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-3">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-169" src="http://localhost/wp-content/uploads/2019/05/postgres.jpg" alt="" width="288" height="288" /><br />
+<h4><img class="alignnone size-full wp-image-169" src="./wp-content/uploads/2019/05/postgres.jpg" alt="" width="288" height="288" /><br />
 PostgreSQL</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-3">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-170" src="http://localhost/wp-content/uploads/2019/05/redis.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-170" src="./wp-content/uploads/2019/05/redis.jpg" alt="" width="250" height="250" /><br />
 Redis</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-3">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-167" src="http://localhost/wp-content/uploads/2019/05/mongo.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-167" src="./wp-content/uploads/2019/05/mongo.jpg" alt="" width="250" height="250" /><br />
 MongoDB</h4>
 </div>
 </div>
@@ -479,19 +477,19 @@ MongoDB</h4>
 <div class="row">
 <div class=" col-xs-4 col-md-4">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-173" src="http://localhost/wp-content/uploads/2019/05/appium.jpg" alt="" width="233" height="233" /><br />
+<h4><img class="alignnone size-full wp-image-173" src="./wp-content/uploads/2019/05/appium.jpg" alt="" width="233" height="233" /><br />
 Appium</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-4">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-174" src="http://localhost/wp-content/uploads/2019/05/detox.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-174" src="./wp-content/uploads/2019/05/detox.jpg" alt="" width="250" height="250" /><br />
 Detox</h4>
 </div>
 </div>
 <div class=" col-xs-4 col-md-4">
 <div class="skill">
-<h4><img class="alignnone size-full wp-image-175" src="http://localhost/wp-content/uploads/2019/05/unit-testing.jpg" alt="" width="250" height="250" /><br />
+<h4><img class="alignnone size-full wp-image-175" src="./wp-content/uploads/2019/05/unit-testing.jpg" alt="" width="250" height="250" /><br />
 Unit Testing</h4>
 </div>
 </div>
@@ -679,23 +677,22 @@ I would&#8217;t be where i am without his support.
 <!-- ALERT: used for contact form mail delivery alert -->
 <div class="site-alert animated"></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script defer src="http://localhost/wp-content/cache/minify/b8add.js"></script>
-
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/jquery.address-1.5.min.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/nprogress/nprogress.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/fastclick.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/typist.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/jquery.isotope.min.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/jquery.fitvids.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/jquery.validate.min.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/jquery.uniform/jquery.uniform.min.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/jquery.magnific-popup/jquery.magnific-popup.min.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/socialstream.jquery.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/jarallax.min.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/jarallax-video.min.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/main.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/twentynineteen/js/wp-fix.js?ver=1'></script>
+<script type='text/javascript' src='http://localhost/wp-includes/js/wp-embed.min.js?ver=5.2'></script>
     <script>
         /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
             var t, e = location.hash.substring(1);
@@ -711,5 +708,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 Page Caching using disk: enhanced 
 Minified using disk
 
-Served from: localhost @ 2019-05-21 17:43:24 by W3 Total Cache
+Served from: localhost @ 2019-05-21 18:34:57 by W3 Total Cache
 -->

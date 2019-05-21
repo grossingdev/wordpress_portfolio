@@ -17,19 +17,23 @@
                   </ul>
 
                   <script>
-                      jQuery(document).ready(function ($) {
-                          var menu_html = "";
+                  var handleInterval = setInterval(function() {
+                      if (jQuery) {
+                          clearInterval(handleInterval);
+                          jQuery(document).ready(function ($) {
+                              var menu_html = "";
+                              $('#main').find('section').each(function () {
+                                  var id = $(this).attr('id');
+                                  var icon = $(this).find('.page-title  i').attr('class');
+                                  var title = $(this).find('.page-title input').val();
+                                  var menu_item = '<li><a href="#/' + id + '"><i class="' + icon + '"></i>' + title + '</a></li>';
 
-                          $('#main').find('section').each(function () {
-                              var id = $(this).attr('id');
-                              var icon = $(this).find('.page-title  i').attr('class');
-                              var title = $(this).find('.page-title input').val();
-                              var menu_item = '<li><a href="#/' + id + '"><i class="' + icon + '"></i>' + title + '</a></li>';
-
-                              menu_html += menu_item;
-                              $('.menu-auto').html(menu_html);
+                                  menu_html += menu_item;
+                                  $('.menu-auto').html(menu_html);
+                              });
                           });
-                      });
+                      }
+                  }, 1000);
                   </script>
               </div>
           </nav>

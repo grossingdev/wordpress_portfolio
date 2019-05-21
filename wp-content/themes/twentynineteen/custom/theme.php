@@ -37,22 +37,22 @@ function portfolio__enqueue()
   }
 
   wp_enqueue_script( 'jquery' );
-  wp_enqueue_script( 'modernizr', $theme_directory . '/js/modernizr.min.js', null, null );
-  wp_enqueue_script( 'address', $theme_directory . '/js/jquery.address-1.5.min.js', null, null, true );
-  wp_enqueue_script( 'nprogress', $theme_directory . '/js/nprogress/nprogress.js', null, null, true );
-  wp_enqueue_script( 'fastclick', $theme_directory . '/js/fastclick.js', null, null, true );
-  wp_enqueue_script( 'typist', $theme_directory . '/js/typist.js', null, null, true );
-  wp_enqueue_script( 'imagesloaded', $theme_directory . '/js/imagesloaded.pkgd.min.js', null, null, true );
-  wp_enqueue_script( 'isotope', $theme_directory . '/js/jquery.isotope.min.js', null, null, true );
-  wp_enqueue_script( 'fitvids', $theme_directory . '/js/jquery.fitvids.js', null, null, true );
-  wp_enqueue_script( 'validate', $theme_directory . '/js/jquery.validate.min.js', null, null, true );
-  wp_enqueue_script( 'uniform', $theme_directory . '/js/jquery.uniform/jquery.uniform.min.js', null, null, true );
-  wp_enqueue_script( 'magnific-popup', $theme_directory . '/js/jquery.magnific-popup/jquery.magnific-popup.min.js', null, null, true );
-  wp_enqueue_script( 'socialstream', $theme_directory . '/js/socialstream.jquery.js', null, null, true );
-  wp_enqueue_script( 'portfolio-jarallax', $theme_directory . '/js/jarallax.min.js', null, null, true );
-  wp_enqueue_script( 'portfolio-jarallax-video', $theme_directory . '/js/jarallax-video.min.js', null, null, true );
-  wp_enqueue_script( 'portfolio-main', $theme_directory . '/js/main.js', null, null, true );
-  wp_enqueue_script( 'portfolio-wp-fix', $theme_directory . '/js/wp-fix.js', null, null, true );
+  wp_enqueue_script( 'modernizr', $theme_directory . '/js/modernizr.min.js', false, false );
+  wp_enqueue_script( 'address', $theme_directory . '/js/jquery.address-1.5.min.js', array('jquery'), true, true );
+  wp_enqueue_script( 'nprogress', $theme_directory . '/js/nprogress/nprogress.js', array('jquery'), true, true );
+  wp_enqueue_script( 'fastclick', $theme_directory . '/js/fastclick.js', array('jquery'), true, true );
+  wp_enqueue_script( 'typist', $theme_directory . '/js/typist.js', array('jquery'), true, true );
+  wp_enqueue_script( 'imagesloaded', $theme_directory . '/js/imagesloaded.pkgd.min.js', array('jquery'), true, true );
+  wp_enqueue_script( 'isotope', $theme_directory . '/js/jquery.isotope.min.js', array('jquery'), true, true );
+  wp_enqueue_script( 'fitvids', $theme_directory . '/js/jquery.fitvids.js', array('jquery'), true, true );
+  wp_enqueue_script( 'validate', $theme_directory . '/js/jquery.validate.min.js', array('jquery'), true, true );
+  wp_enqueue_script( 'uniform', $theme_directory . '/js/jquery.uniform/jquery.uniform.min.js', array('jquery'), true, true );
+  wp_enqueue_script( 'magnific-popup', $theme_directory . '/js/jquery.magnific-popup/jquery.magnific-popup.min.js', array('jquery'), true, true );
+  wp_enqueue_script( 'socialstream', $theme_directory . '/js/socialstream.jquery.js', array('jquery'), true, true );
+  wp_enqueue_script( 'portfolio-jarallax', $theme_directory . '/js/jarallax.min.js', array('jquery'), true, true );
+  wp_enqueue_script( 'portfolio-jarallax-video', $theme_directory . '/js/jarallax-video.min.js', array('jquery'), true, true );
+  wp_enqueue_script( 'portfolio-main', $theme_directory . '/js/main.js', array('jquery'), true, true );
+  wp_enqueue_script( 'portfolio-wp-fix', $theme_directory . '/js/wp-fix.js', array('jquery'), true, true );
 
   if (is_customize_preview())
   {
