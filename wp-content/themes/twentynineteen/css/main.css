@@ -692,7 +692,7 @@ body {
 	background-color: #2E2F2D; 
 	}
 .one-page-layout .site-main > section:nth-of-type(2) { 
-	background-color: #ECF0F0; 
+	background-color: #FFF;
 	}
 .one-page-layout .site-main > section:nth-of-type(3) { 
 	background-color: #EBF0DF; 
@@ -737,10 +737,10 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 .light-text .process {
-	background: rgba(255, 255, 255, 0.7);
+	background: rgba(240, 240, 240, 0.7);
 	}
 .light-text .process:after { 
-	border-bottom-color: rgba(255, 255, 255, 0.15);
+	border-bottom-color: rgba(240, 240, 240, 0.15);
 	}
 .light-text .filters li a {
 	color: #fff;
@@ -869,10 +869,10 @@ body {
 }
 /* PROCESS */
 .process { 
-	position: relative; text-align: center; width: 80px; height: 80px; padding: 16px 10px; margin: 0 auto 1.6em; border-radius: 0 14px 14px 14px; color: #345; background: #fff;
+	position: relative; text-align: center; width: 80px; height: 80px; padding: 16px 10px; margin: 0 auto 1.6em; border-radius: 0 14px 14px 14px; color: #345; background: rgb(240, 240, 240);
 	}
 .process:after { 
-	content: ""; position:absolute; top: 50%; left: 100%; width: 120%; height: 0; border-bottom: 3px dashed #fff;
+	content: ""; position:absolute; top: 50%; left: 100%; width: 120%; height: 0; border-bottom: 3px dashed rgb(240, 240, 240);
 	}
 .process i { 
 	font-size: 28px; line-height: 1;
