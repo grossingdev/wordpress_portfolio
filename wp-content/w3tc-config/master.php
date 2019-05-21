@@ -269,13 +269,25 @@
     "minify.js.engine": "js",
     "minify.js.combine.header": "0",
     "minify.js.header.embed_type": "nb-defer",
-    "minify.js.combine.body": false,
+    "minify.js.combine.body": "0",
     "minify.js.body.embed_type": "nb-defer",
-    "minify.js.combine.footer": false,
+    "minify.js.combine.footer": "0",
     "minify.js.footer.embed_type": "blocking",
     "minify.js.strip.comments": "0",
     "minify.js.strip.crlf": "0",
-    "minify.js.groups": [],
+    "minify.js.groups": {
+        "c3544": {
+            "default": {
+                "include": {
+                    "files": [
+                        "http:\/\/5.187.51.223\/wp-includes\/js\/jquery\/jquery.js?ver=1.12.4",
+                        "http:\/\/5.187.51.223\/wp-includes\/js\/jquery\/jquery-migrate.min.js?ver=1.4.1",
+                        "http:\/\/5.187.51.223\/wp-content\/themes\/twentynineteen\/js\/modernizr.min.js"
+                    ]
+                }
+            }
+        }
+    },
     "minify.yuijs.path.java": "java",
     "minify.yuijs.path.jar": "yuicompressor.jar",
     "minify.yuijs.options.line-break": 5000,
