@@ -4,14 +4,7 @@
       ?>
 
       <div class="header-wrap">
-      <?php
-        $logo_image = get_option('logo_image', "");
-        if ($logo_image != "") {
-        ?>
-          <img alt="<?php bloginfo('name'); ?>" src="<?php echo esc_url($logo_image); ?>">
-      <?php
-        }
-      ?>
+      <img alt="<?php bloginfo('name'); ?>" src="./wp-content/uploads/2019/05/me.jpg">
       <?php
         portfolio_site_title();
         $classic_navigation_menu = get_option('classic_navigation_menu', 'No');
