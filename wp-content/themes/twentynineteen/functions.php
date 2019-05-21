@@ -177,6 +177,29 @@ if (!function_exists('twentynineteen_setup')) :
 endif;
 add_action('after_setup_theme', 'twentynineteen_setup');
 
+if (is_admin())
+{
+	include_once(get_template_directory() . '/admin/theme-options.php');
+}
+
+function portfolio__enqueue_admin()
+{
+	wp_enqueue_style( 'portfolio-admin', get_template_directory_uri() . '/admin/admin.css' );
+	wp_enqueue_style( 'thickbox' );
+
+
+	wp_enqueue_script( 'thickbox' );
+
+	if ( isset( $_GET['page'] ) )
+	{
+		if ( $_GET['page'] != 'codestyling-localization/codestyling-localization.php' )
+		{
+			wp_enqueue_script( 'media-upload' );
+		}
+	}
+}
+
+add_action( 'admin_enqueue_scripts', 'portfolio__enqueue_admin' );
 /**
  * Register widget area.
  *

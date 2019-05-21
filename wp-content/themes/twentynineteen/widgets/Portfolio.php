@@ -298,42 +298,14 @@ class portfolio__Widget__Portfolio extends WP_Widget
 									the_post_thumbnail( 'portfolio__image_size_2' );
 									?>
 
-									<div class="mask"></div>
+									<div class="mask">
+                                        <h3><?php the_title(); ?></h3>
+                                        <h4><?php if ( has_excerpt() ) { echo get_the_excerpt(); }?></h4>
+                                    </div>
 
 									<?php
-									if ( $pf_type == 'Lightbox Gallery' )
-									{
-										the_content();
-									}
-									elseif ( $pf_type == 'Lightbox Audio' )
-									{
-										$pf_direct_url = stripcslashes( get_option( get_the_ID() . 'pf_direct_url' ) );
-
-										?>
-										<a class="lightbox mfp-iframe" href="<?php echo esc_url( $pf_direct_url ); ?>" title="<?php the_title_attribute(); ?>"></a>
-										<?php
-									}
-									elseif ( $pf_type == 'Lightbox Video' )
-									{
-										$pf_direct_url = stripcslashes( get_option( get_the_ID() . 'pf_direct_url' ) );
-
-										?>
-										<a class="lightbox mfp-iframe" href="<?php echo esc_url( $pf_direct_url ); ?>" title="<?php the_title_attribute(); ?>"></a>
-										<?php
-									}
-									elseif ( $pf_type == 'Direct URL' )
-									{
-										$pf_direct_url = stripcslashes( get_option( get_the_ID() . 'pf_direct_url' ) );
-										$new_tab = get_option( get_the_ID() . 'pf_link_new_tab', true );
-
-										?>
-										<a <?php if ( $new_tab != false ) { echo 'target="_blank"'; } ?> href="<?php echo esc_url( $pf_direct_url ); ?>"></a>
-										<?php
-									}
-									else
 									{
 										$portfolio__ajax = get_option( 'portfolio__ajax', 'Yes' );
-
 										if ( $portfolio__ajax != 'No' )
 										{
 											?>
@@ -352,21 +324,21 @@ class portfolio__Widget__Portfolio extends WP_Widget
 								<?php
 							}
 							?>
+<!---->
+<!--							<div class="media-cell-desc">-->
 
-							<div class="media-cell-desc">
-								<h3><?php the_title(); ?></h3>
-								<?php
-								if ( has_excerpt() ) {
-                                ?>
-									<p class="category">
-										<?php
-										    echo get_the_excerpt();
-										?>
-									</p>
-									<?php
-								}
-								?>
-							</div>
+<!--								--><?php
+//								if ( has_excerpt() ) {
+//                                ?>
+<!--									<p class="category">-->
+<!--										--><?php
+//										    echo get_the_excerpt();
+//										?>
+<!--									</p>-->
+<!--									--><?php
+//								}
+//								?>
+<!--							</div>-->
 						</div>
 					<?php
 

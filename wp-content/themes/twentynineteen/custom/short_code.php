@@ -137,6 +137,91 @@
 	}
 	add_shortcode( 'button', 'button' );
 
+// mini_text from portfolio
+	function mini_text( $atts, $content = "" ){
+		$output = '<div class="mini-text">' . do_shortcode( $content ) . '</div>';
+		return $output;
+	}
+
+	add_shortcode( 'mini_text', 'mini_text' );
+
+// social icon
+	function social_icon( $atts, $content = "" ) {
+		extract( shortcode_atts( array( 'first_icon' => "",
+			'last_icon' => "",
+			'type' => "",
+			'url' => "" ), $atts ) );
+		if ( $first_icon == 'yes' ) {
+			$first_icon = '<ul class="social">';
+		}
+		if ( $last_icon == 'yes' ) {
+			$last_icon = '</ul>';
+		}
+		$social_icon = $first_icon;
+		$social_icon .= '<li>';
+		$social_icon .= '<a target="_blank" class="' . $type . '" href="' . $url . '"></a>';
+		$social_icon .= '</li>';
+		$social_icon .= $last_icon;
+		return $social_icon;
+	}
+	add_shortcode( 'social_icon', 'social_icon' );
+
+// fun_fact
+	function fun_fact( $atts, $content = "" ) {
+		$fun_fact = '<div class="fun-fact">' . do_shortcode( $content ) . '</div>';
+		return $fun_fact;
+	}
+	add_shortcode( 'fun_fact', 'fun_fact' );
+// contact_form
+function contact_form($atts, $content = "")
+{
+	extract(shortcode_atts(array('to' => "",  'subject' => ""), $atts));
+	if ($to != "") {
+		update_option('contact_form_to', $to);
+	} else {
+		$admin_email = get_bloginfo('admin_email');
+		update_option('contact_form_to', $admin_email);
+	}
+	// Get the site domain and get rid of www.
+	$site_url = strtolower($_SERVER['SERVER_NAME']);
+	if (substr($site_url, 0, 4) == 'www.') {
+		$site_url = substr($site_url, 4);
+	}
+	$sender_domain = 'server@' . $site_url;
+	$output = '<div class="contact-form">';
+	$output .= '<form id="contact-form" method="post" action="' . get_template_directory_uri() . '/send-mail.php">';
+	$output .= '<p><label for="name">' . __('NAME', 'empathy') . '</label><input type="text" id="name" name="name" class="required"></p>';
+	$output .= '<p><label for="email">' . __('EMAIL', 'empathy') . '</label><input type="text" id="email" name="email" class="required email"></p>';
+	$output .= '<p class="antispam"><label for="url">' . __('Leave this empty', 'empathy') . '</label><input type="text" id="url" name="url"></p>';
+	$output .= '<p><label for="message">' . __('MESSAGE', 'empathy') . '</label><textarea id="message" name="message" class="required"></textarea></p>';
+	$output .= '<p style="padding: 0px; margin: 0px;"><input type="hidden" id="sender_domain" name="sender_domain" value="' . $sender_domain . '"></p>';
+	$output .= '<p style="padding: 0px; margin: 0px;"><input type="hidden" id="subject" name="subject" value="' . $subject . '"></p>';
+	$output .= '<p><input type="submit" class="submit button primary" value="' . __('SEND', 'empathy') . '"></p>';
+	$output .= '</form>';
+	$output .= '</div>';
+	return $output;
+}
+add_shortcode('contact_form', 'contact_form');
+
+function map($atts, $content = "") {
+	extract(shortcode_atts(array('latitude'  => "",
+		'longitude' => "",
+		'zoom'      => "",
+		'image'     => ""), $atts));
+	$output = "";
+	$output .= '<div class="map">';
+	$google_map_api_key = get_option('google_map_api_key', "");
+	if ($google_map_api_key != "") {
+		$output .= '<p style="padding: 0px; margin: 0px;"><script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=' . esc_attr($google_map_api_key) . '"></script></p>';
+	} else {
+		$output .= '<p style="padding: 0px; margin: 0px;"><script type="text/javascript" src="//maps.googleapis.com/maps/api/js"></script></p>';
+	}
+	$output .= '<div id="map-canvas" class="map-canvas" data-latitude="' . $latitude . '" data-longitude="' . $longitude . '" data-zoom="' . $zoom . '" data-marker-image="' . $image . '"></div>';
+	$output .= '</div>';
+	return $output;
+}
+
+add_shortcode('map', 'map');
 // Actual processing of the shortcode happens here
 function portfolio__run_shortcode($content) {
   global $shortcode_tags;
@@ -158,7 +243,11 @@ function portfolio__run_shortcode($content) {
 	add_shortcode( 'event', 'event' );
 	add_shortcode( 'testimonial', 'testimonial' );
 	add_shortcode( 'button', 'button' );
-
+	add_shortcode( 'mini_text', 'mini_text' );
+	add_shortcode( 'social_icon', 'social_icon' );
+	add_shortcode( 'fun_fact', 'fun_fact' );
+	add_shortcode('contact_form', 'contact_form');
+	add_shortcode('map', 'map');
 	// Do the shortcode ( only the one above is registered )
   $content = do_shortcode( $content );
   // Put the original shortcodes back
